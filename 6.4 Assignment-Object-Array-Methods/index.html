@@ -13,13 +13,13 @@
 
     <h2>Trip Summary</h2>
     <p id="tripSummary"></p>
-    
+
     <h2>Planned Activities</h2>
     <p id="activityList"></p>
-    
-    <button onclick="addActivity()">Add Activity</button>
+
+    <button onclick="addActivity()">Add Activity</button><br>
     <button onclick="sortActivities()">Sort Activities</button>
-    
+
     <script>
         //Object Method: Trip details with a method
         const trip = {
@@ -31,45 +31,45 @@
                 return `Trip to <b>${this.destination}</b>: Final Cost <b>$${(this.flight + this.baggage - this.discount).toFixed(2)}</b>`;
             }
         };
-    
+
         document.getElementById("tripSummary").innerHTML = trip.getSummary();
-        
-    
+
+
         //Array methods: List of activities
-    const activities = ["Beach", "Zoo", "Museum", "Hiking", "Shopping"];
-    
-    document.getElementById("activityList").innerHTML = formatActivities();
-    
-    //Add new activities using push() method
-    function addActivity() {
-        //Add new activities
-        activities.push("Boat Tour");
-        activities.push("Bike Ride");
-    
+        const activities = ["Beach", "Zoo", "Museum", "Hiking", "Shopping"];
+
         document.getElementById("activityList").innerHTML = formatActivities();
-    }
-    
-    //Alphabetize list using sort() method
-    function sortActivities() {
-        activities.sort();
-    
-        document.getElementById("activityList").innerHTML = formatActivities();
-    }
-    
-    //Formatting the html of the activities
-    function formatActivities() {
-        let activityHTML = "<h3>Activities:</h3>";
-    
-        //Loop through the list and add each activity
-        for (let i = 0; i < activities.length; i++) {
-            activityHTML += "✅ " + activities[i] + "<br>";
+
+        //Add new activities using push() method
+        function addActivity() {
+            //Add new activities
+            activities.push("Boat Tour");
+            activities.push("Bike Ride");
+
+            document.getElementById("activityList").innerHTML = formatActivities();
         }
-    
-        return activityHTML;
-    }
-    
+
+        //Alphabetize list using sort() method
+        function sortActivities() {
+            activities.sort();
+
+            document.getElementById("activityList").innerHTML = formatActivities();
+        }
+
+        //Formatting the html of the activities
+        function formatActivities() {
+            let activityHTML = "<h3>Activities:</h3>";
+
+            //Loop through the list and add each activity
+            for (let i = 0; i < activities.length; i++) {
+                activityHTML += "✅ " + activities[i] + "<br>";
+            }
+
+            return activityHTML;
+        }
+
     </script>
-    
+
 
 </body>
 

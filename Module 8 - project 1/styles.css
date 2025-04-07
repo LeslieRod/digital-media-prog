@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(310deg, rgba(147,34,195,1) 0%, rgba(45,253,240,1) 100%);
+}
+
+.emoji {
+  font-size: 15rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.halo {
+  display: none;
+}
+
+.horns {
+  display: none;
+}
+
+.active {
+  display: block;
+}

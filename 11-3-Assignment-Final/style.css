@@ -1,0 +1,71 @@
+/* Celestial gradient background */
+body {
+  background: linear-gradient(135deg, #2c3e50, #8e44ad, #3498db);
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+/* Fortune teller container */
+.fortune-teller-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Image styling for fortune teller */
+.fortune-teller-image img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input box styling */
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #8a2be2;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #5f0ba1;
+}
+
+/* Fortune text styling */
+#fortune {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #fffae5;
+}
